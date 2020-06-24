@@ -1,0 +1,73 @@
+.axure__design {
+    background: url('../img/axure__design.jpg') center no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.axure__overlay {
+    background-color: rgba(0, 0, 0, .6);
+    height: 50vh;
+    padding: 100px 0;
+}
+
+.axure__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 70px;
+        background-color: #fff;
+        margin: 30px auto;
+    }
+}
+
+.axure__sup {
+    text-align: center;
+    color: #fff;
+    opacity: .5;
+    font-size: 18px;
+}
+
+.axure__btn {
+    margin: 70px auto 0;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
+        padding: 15px 35px;
+        border: 2px solid #fff;
+        transition: all .4s ease;
+    }
+
+    a:hover {
+        background-color: #fff;
+        color: #000000;
+    }
+}
+
+@media screen and(max-width:450px) {
+    .axure__overlay {
+        padding: 30px;
+    }
+
+    .axure__title {
+        font-size: 25px;
+    }
+
+    .axure__sup {
+        font-size: 15px;
+    }
+
+    .axure__btn {
+        margin: 50px 0;
+    }
+}

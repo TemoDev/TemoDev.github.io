@@ -1,0 +1,56 @@
+/* Font-Families  
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+input {
+    outline: none;
+
+    &:focus {
+        border-bottom: 1px solid black;
+    }
+}
+
+@import '_header';
+@import '_intro';
+@import '_socialMedia';
+@import '_tab';
+@import '_sub';
+@import '_standardsec';
+@import '_services';
+@import '_price';
+@import '_testimonials';
+@import '_axure__design';
+@import '_contact';
+@import '_footer';

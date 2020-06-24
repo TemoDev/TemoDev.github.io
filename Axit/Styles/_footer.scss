@@ -1,0 +1,36 @@
+footer{
+    padding: 15px 0;
+    background-color: #000000;
+}
+.social__icons{
+    width: 350px;
+    margin: 0 auto;
+    .footer__social{
+        margin: 0;
+    }
+    svg{
+        height: 25px;
+        padding: 0;
+        opacity: .5;
+        transition: all .4s ease;
+        path,circle,polygon{
+            transition: all .4s ease;
+        }
+    }
+    .footer__social:hover{
+        svg{
+            opacity: 1;
+        }
+        path,circle,polygon{
+            fill: #ffffff;
+            opacity: 1;
+            
+        }
+    }
+}
+.copyright{
+    color: #fff;
+    opacity: .5;
+    text-align: center;
+    margin-top: 10px;
+}

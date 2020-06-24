@@ -1,0 +1,262 @@
+.intro {
+    background: url('../img/intro__img.jpg') center no-repeat;
+    background-size: cover;
+    height: 92vh;
+    top: 8vh;
+}
+
+.intro__inner {
+    background-color: rgba(0, 0, 0, .5);
+    height: 92vh;
+    top: 8vh;
+    color: #fff;
+}
+
+.intro__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content__logo {
+    img {
+        height: 60px;
+    }
+}
+
+.content__desc {
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    width: 520px;
+    margin-top: 20px;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 65px;
+        background-color: #fff;
+        margin: 45px 0;
+    }
+}
+
+.content__sup {
+    font-size: 15px;
+    color: #fff;
+    opacity: .7;
+    width: 470px;
+}
+
+.content__btn {
+    margin: 45px 0 0;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        padding: 13px 30px;
+        border: 2px solid #fff;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+
+    a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+// -------------FORM-----------------------
+
+.content__form {
+    width: 360px;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 35px 0;
+
+        input {
+            margin: 20px 0;
+            height: 35px;
+            border: none;
+            border-bottom: 1px solid #d6d6d6;
+        }
+
+        input[type=submit] {
+            background-color: #ff9b51;
+            border: none;
+            width: 360px;
+            text-align: center;
+            margin-left: -35px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            height: 55px;
+            transition: all .4s ease;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #d6d6d6;
+            color: #ff9b51;
+        }
+
+        input:focus {
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+.form__title {
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 15px 0;
+    background-color: #f5f5f5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+@media screen and (max-width:900px) {
+    .content__desc {
+        font-size: 30px;
+        max-width: 460px;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .content__desc {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .content__sup {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .content__desc {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .content__sup {
+        width: 300px;
+    }
+
+    .content__form {
+        width: 300px;
+        height: 354px;
+
+        form {
+            margin: 10px 35px 0;
+
+            input {
+                margin: 20px 0;
+                height: 35px;
+            }
+
+            input[type=submit] {
+                width: 300px;
+                height: 55px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    .intro__content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .content__inner {
+        text-align: center;
+    }
+
+    .content__sup {
+        margin: auto;
+    }
+
+    .content__desc {
+        margin: 20px auto 0;
+
+        &::after {
+            margin: 35px auto;
+        }
+    }
+
+    .content__form {
+        margin: 50px auto 0;
+
+    }
+
+    .intro {
+        height: 150vh;
+    }
+
+    .intro__inner {
+        height: 150vh;
+    }
+
+    .content__form {
+        width: 360px;
+
+        form {
+            input[type=submit] {
+                width: 360px;
+                height: 55px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:360px) {
+    .content__desc {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .content__form {
+        max-width: 300px;
+        width: 100%;
+
+        form {
+            input[type=submit] {
+                width: 300px;
+                height: 55px;
+            }
+        }
+    }
+}
+
+@media screen and(max-height: 860px) {
+    .intro__content {
+        position: relative;
+        top: 10%;
+        left: 0;
+        transform: translate(0, 0);
+        padding-top: 70px;
+    }
+}

@@ -1,0 +1,120 @@
+.price{
+    padding: 100px 0;
+    background-color: #f5f5f5;
+}
+.price__inner{
+    display: flex;
+    flex-direction: column;
+}
+.price__title{
+    text-transform: uppercase;
+    color: #212121;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    text-align: center;
+
+    &::after{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 70px;
+        background-color: #ff8b38;
+        margin: 35px auto;
+    }
+}
+.price__sup{
+    color: #86878b;
+    text-align: center;
+    font-size: 13px;
+}
+
+// -------------price cards----------------
+
+.price__cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.price__card{
+    width: 23%;
+    min-width: 340px;
+    margin-right: 15px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.price__name{
+    color: #f5f5f5;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #333333;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+}
+.price__amount{
+    color: #fff;
+    font-weight: 700;
+    font-size: 80px;
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    span{
+        font-size: 40px;
+        padding-right: 3px;
+    }
+}
+.price__date{
+    padding-bottom: 20px;
+    background-color: #333333;
+    text-align: center;
+    span{
+        color: #fff;
+        opacity: .5;
+    }
+}
+.price__popularity{
+    background-color: #ff8b38;
+    padding: 5px 0;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.price__desc{
+    text-align: center;
+    background-color: #fff;
+    div{
+        padding: 10px;
+        border-bottom: 1px solid #f5f5f5;
+        color: #86878b;
+        text-transform: uppercase;
+    }
+}
+.price__card--popular{
+    margin-top: -30px;
+    .price__popularity{
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1096px){
+    .price__card{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 760px){
+    .price__cards{
+        flex-direction: column;
+    }
+    .price__card{
+        margin: 30px auto;
+        &:last-child{
+            margin: 30px auto;
+        }
+    }
+}
