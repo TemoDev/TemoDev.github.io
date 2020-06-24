@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-image: linear-gradient(90deg, rgb(0, 89, 255), rgb(0, 238, 255));
+    overflow-x: hidden;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    /* background-image: linear-gradient(90deg, green, yellow); */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(114, 222, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid black;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo {
+    margin: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ededed;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.todo:hover {
+    background-color: #e3e3e3;
+}
+
+.todo__content {
+    display: flex;
+}
+
+.todo__delete {
+    padding: 10px 25px;
+    background-color: tomato;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.todo__delete:hover {
+    background-color: red;
+}
+
+.todo__name {
+    align-self: center;
+    margin-left: 10px;
+}
+
+form {
+    text-align: center;
+    margin: 15px 0;
+}
+
+input[type=text] {
+    width: 50%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.submit {
+    cursor: pointer;
+    padding: 10px 25px;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: all .4s ease;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: #fcba03;
+    color: #fff;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.checkbox-checked {
+    text-decoration: line-through;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(114, 222, 255);
+    border-radius: 10px;
+    transition: background .3s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 174, 255);
+}
+
+@media(max-width:460px) {
+    .title {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    form {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    input[type=text] {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+
+    .todo {
+        margin: 5px 10px;
+        padding: 5px 10px;
+    }
+
+    .todo__name {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .todo__delete {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+}
