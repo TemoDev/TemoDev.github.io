@@ -1,0 +1,33 @@
+
+/*social*/
+.social{
+    display:flex;
+    justify-content: center;
+}
+
+.social__item{
+    height: 55px;
+    width: 55px;
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+
+    font-size:25px; /*fontawesome icons size get large by font size */
+    text-decoration: none;
+    color: #f38181;
+    padding:15px;
+    line-height: 1;
+
+    transition: background-color .2s linear, color .2s linear;
+}
+
+
+
+.social__item:last-child{
+    border-right:none;
+}
+
+
+.social__item:hover{
+    background-color: #f38181;
+    color: #fff;
+}

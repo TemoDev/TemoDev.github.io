@@ -1,0 +1,45 @@
+/*statistic*/
+.statistic {
+    background-color: #95e1d3;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat__item {
+    flex: 1 1 0;
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    text-align: center;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.stat__item:last-child {
+    border-right: 2px solid rgba(255, 255, 255, .3);
+}
+
+.stat__num {
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25xp;
+}
+
+.stat__text {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width:718px){
+    .stat{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .stat__item{
+        padding:20px;
+        border-top: 2px solid rgba(255, 255, 255, .3);
+    }
+}

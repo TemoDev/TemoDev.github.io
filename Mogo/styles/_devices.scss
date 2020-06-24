@@ -1,0 +1,30 @@
+/*devices*/
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__item {
+    display: block;
+}
+
+.devices__item--iphone {
+    position: absolute;
+    bottom: -80px;
+    right: -50px;
+    z-index: 1;
+}
+
+.devices__item--tablet {
+    max-width: 780px;
+    width: 100%;
+}
+
+@media(max-width:700px) {
+    .devices__item--iphone {
+        display: none;
+    }
+}
