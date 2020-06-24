@@ -1,0 +1,142 @@
+.aboutUs {
+    padding: 40px 0;
+    position: relative;
+}
+
+.about__title {
+    font-weight: 600;
+    font-size: 75px;
+    text-align: center;
+}
+
+.about__sup {
+    font-size: 30px;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+@media(min-width:767px) {
+    .aboutUs__main {
+        display: flex;
+    }
+}
+
+.aboutUs__content {
+    flex: 0 0 100%;
+}
+
+.aboutUs__img {
+    img {
+        width: 100%;
+    }
+}
+
+@media(min-width:767px) {
+    .aboutUs__img {
+        position: relative;
+        flex: 0 0 50%;
+        transform: translateX(-100%);
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.aboutUs__body {
+    display: flex;
+}
+
+.aboutUs__text {
+    align-self: center;
+    margin-right: 45px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media(min-width:767px) {
+    .aboutUs__body {
+        width: 50%;
+        display: flex;
+    }
+}
+
+@media(max-width:767px) {
+    .aboutUs__body {
+        display: flex;
+        padding: 0 40px 40px;
+    }
+
+    .aboutUs__text {
+        margin: 0;
+    }
+}
+
+// elements
+.element {
+    position: absolute;
+
+    img {
+        height: 50px;
+    }
+}
+
+.element-1 {
+    top: 20%;
+    left: 80%;
+    z-index: 10000;
+    transform: rotate(35deg);
+}
+
+.element-2 {
+    top: 5%;
+    left: 45%;
+    z-index: 10000;
+}
+
+.element-3 {
+    top: 70%;
+    left: 30%;
+    z-index: 10000;
+    transform: rotate(75deg);
+}
+
+.element-4 {
+    top: 10%;
+    left: 7%;
+    z-index: 10000;
+    transform: rotate(45deg);
+}
+
+.element-5 {
+    top: 50%;
+    left: 20%;
+    z-index: 10000;
+}
+
+@media(max-width:500px) {
+    .about__title {
+        font-size: 45px;
+    }
+
+    .about__sup {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .aboutUs__text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .aboutUs__body {
+        padding: 20px 0 40px;
+    }
+}

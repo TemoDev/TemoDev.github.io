@@ -1,0 +1,33 @@
+$white : #f4f4f4;
+$orange : #F0A500;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Architects Daughter',cursive;
+    overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+@import '_nav';
+@import '_intro';
+@import '_aboutUs';
+@import '_testimonials';
+@import '_news';
+@import '_footer';
