@@ -1,0 +1,31 @@
+.homeIntro {
+  height: 80vh;
+  background: url('../img/home/homesurf.jpg') center / cover;
+  background-repeat: no-repeat;
+}
+.homeIntro__header{
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.homeLogo{
+  img{
+    height: 90px;
+  }
+}
+.homeintro__socials{
+  display: flex;
+  img{
+    margin-right: 15px;
+    height: 20px;
+    transition: all .2s ease;
+  }
+  a{
+    align-self: center;
+  }
+  a:hover{
+    img{
+      transform: translateY(-5px);
+    }
+  }
+}

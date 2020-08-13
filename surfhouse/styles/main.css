@@ -1,4 +1,64 @@
 body {
-  background-color: orange;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+  margin: auto;
+}
+
+.homeIntro {
+  height: 80vh;
+  background: url("../img/home/homesurf.jpg") center/cover;
+  background-repeat: no-repeat;
+}
+
+.homeIntro__header {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homeLogo img {
+  height: 90px;
+}
+
+.homeintro__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeintro__socials img {
+  margin-right: 15px;
+  height: 20px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.homeintro__socials a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.homeintro__socials a:hover img {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 /*# sourceMappingURL=main.css.map */
