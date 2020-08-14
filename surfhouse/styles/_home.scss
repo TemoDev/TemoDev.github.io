@@ -29,3 +29,139 @@
     }
   }
 }
+
+
+.card__block{
+  display: inline-block;
+  width: 270px;
+}
+
+// card__header
+.card__header{
+  display: flex;
+  width: 270px;
+  background-color: #f8f8f8;
+  justify-content: space-around;
+
+  a{
+    text-decoration: none;
+    padding: 10px 35px;
+    color: $orange;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+  }
+  a:hover{
+    color: $darkGrey;
+  }
+}
+
+.itemCounter{
+  display: flex;
+  padding: 15px 25px;
+  background-color: $orange;
+  justify-content: space-around;
+  img{
+    height: 30px;
+    align-self: center;
+  }
+}
+
+.moneyCounter{
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+}
+
+.itemCount{
+  font-size: 12px;
+  color: $yellow;
+}
+
+.editBtns{
+  text-align: center;
+}
+.btnEdit{
+  color: $darkGrey;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.btnCancel{
+  cursor: pointer;
+  &::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $yellow;
+    margin: auto;
+    transform: rotate(45deg) translate(0px, 1px);      
+  }
+  &::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $yellow;
+    margin: auto;
+    transform: rotate(-45deg) translate(-2px, 1px); 
+  }
+}
+
+.cardView__btns{
+  display: flex;
+  justify-content: space-around;
+  background-color: $orange;
+}
+
+.cardView__btn{
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 7px;
+    color: #f8f8f8;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+  &:hover{
+    color: $yellow;
+  }
+}
+
+form{
+  width: 270px;
+  display: flex;
+}
+button{
+  cursor: pointer;
+  width: 50px;
+  border: none;
+  outline: none;
+  background-color: $darkGrey;
+
+  img{
+    width: 15px;
+    height: 15px;
+    transition: all .2s ease-in-out;
+  }
+
+  &:hover{
+    img{
+      transform: rotate(90deg);
+    }
+  }
+}
+input{
+  width: 240px;
+  padding: 10px;
+  background-color: #e9e9e9;
+  outline: none;
+  border: none;
+}
+input::placeholder{
+  color: black;
+  font-size: 10px;
+  text-transform: uppercase;
+}
