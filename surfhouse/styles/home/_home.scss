@@ -1,5 +1,5 @@
 .homeIntro {
-  height: 80vh;
+  height: 100vh;
   background: url('../img/home/homesurf.jpg') center / cover;
   background-repeat: no-repeat;
 }
@@ -164,4 +164,68 @@ input::placeholder{
   color: black;
   font-size: 10px;
   text-transform: uppercase;
+}
+
+// home intro inner
+
+.homeIntro__inner{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 3%;
+}
+
+.buyNowSurf__block{
+  max-width: 315px;
+  width: 100%;
+  align-self: center;
+}
+
+.buyNowSurf__title{
+  font-weight: 800;
+  color: $yellow;
+  font-size: 48px;
+  line-height: 38px;
+}
+
+.buyNowSurf__text{
+  font-size: 18px;
+  color: $yellow;
+  margin-bottom: 80px;
+}
+
+.buyNowSurf__btn{
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  color: #000;
+  background-color: $yellow;
+  font-size: 14px;
+  transition: all .2s ease-in-out;
+
+  &:hover{
+    color: $yellow;
+  background-color: #000;
+  }
+}
+
+.surfWelcome__block{
+  max-width: 270px;
+  width: 100%;
+  padding: 80px 25px;
+  background-color: $yellow;
+  margin-top: 10px;
+}
+.surfWelcome__title{
+  font-size: 30px;
+  font-weight: 800;
+  color: $darkGrey;
+  margin-bottom: 25px;
+}
+
+.surfWelcome__text{
+  color: $darkGrey;
+  font-size: 18px;
+  font-weight: 600;
 }

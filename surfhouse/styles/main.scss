@@ -4,6 +4,7 @@ body {
 
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
 }
 
 *,
@@ -26,4 +27,5 @@ $lightGrey : #707070;
   margin: auto;
 }
 
-@import '_home'
+@import 'home/_home';
+@import 'home/_mainContent'
