@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Surfhouse</title>
-  <link rel="stylesheet" href="styles/main.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <link rel="stylesheet" href="styles/main.css">
+
 </head>
 
 <body>
@@ -81,8 +85,8 @@
   </div>
   <!--homeIntro-->
 
-  <div class="mainContent">
-    <div class="container">
+  <div class="container">
+    <div class="mainContent">
       <div class="sideColumn">
         <div class="menu">
           <div class="menuTitle">menu</div>
@@ -108,10 +112,31 @@
           <div class="tag__title">tags widgets</div>
         </div>
       </div>
-      <div class="mainColumn"></div>
-    </div>
-  </div>
+      <div class="mainColumn">
 
+        <div class="swiper-button-con">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--mainContent-->
+  </div>
+  <!--container-->
+  <!-- javascript -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- custom scripts -->
+  <script type="module" src="js/swiper.js"></script>
 </body>
 
 </html>

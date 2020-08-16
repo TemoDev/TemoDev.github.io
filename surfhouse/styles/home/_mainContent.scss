@@ -1,5 +1,7 @@
 .mainContent{
     transform: translateY(-2%);
+    display: flex;
+    justify-content:space-between;
 }
 
 .sideColumn{
@@ -57,4 +59,23 @@
     color: $darkGrey;
     text-transform: uppercase;
     width: 100px;
+}
+
+.mainColumn{
+    background-color: #f8f8f8;
+}
+// swiper
+.swiper-container {
+    width: 800px;
+    height: 300px;
+}
+.swiper-button-con{
+    position: relative;
+}
+.swiper-button-prev,
+.swiper-button-next{
+  color: $lightGrey;
+  height: 12px;
+  width: 5px;
+  font-size: 12px;
 }

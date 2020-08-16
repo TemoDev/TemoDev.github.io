@@ -318,6 +318,12 @@ input::placeholder {
 .mainContent {
   -webkit-transform: translateY(-2%);
           transform: translateY(-2%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sideColumn {
@@ -386,5 +392,26 @@ input::placeholder {
   color: #333333;
   text-transform: uppercase;
   width: 100px;
+}
+
+.mainColumn {
+  background-color: #f8f8f8;
+}
+
+.swiper-container {
+  width: 800px;
+  height: 300px;
+}
+
+.swiper-button-con {
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #707070;
+  height: 12px;
+  width: 5px;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */
