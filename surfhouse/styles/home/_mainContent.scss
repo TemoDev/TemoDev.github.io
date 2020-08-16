@@ -1,30 +1,32 @@
-.mainContent{
+.mainContent {
     transform: translateY(-2%);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.sideColumn{
+.sideColumn {
     max-width: 270px;
     width: 100%;
+    margin-right: 10px;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: column;
     background-color: $lightBlue;
 }
 
-.menuTitle{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 800;
-  font-size: 14px;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 25px 0 25px 40px;
-  background-color: $darkGrey;
+.menuTitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 25px 0 25px 40px;
+    background-color: $darkGrey;
 }
 
-.manu__link{
+.manu__link {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
@@ -32,12 +34,13 @@
     padding: 15px 0 15px 40px;
     transition: all .2s ease-in-out;
 
-    &:hover{
+    &:hover {
         color: #fff;
         background-color: $darkGrey;
     }
 }
-.homeNews__block{
+
+.homeNews__block {
     height: 270px;
     background: url('../../img/home/nowOpen.jpg') center / cover;
     background-repeat: no-repeat;
@@ -45,11 +48,12 @@
     position: relative;
     transition: all .2s ease;
 
-    &:hover{
+    &:hover {
         transform: scale(1.1);
     }
 }
-.homeNews__text{
+
+.homeNews__text {
     position: absolute;
     top: 40%;
     right: 30px;
@@ -61,21 +65,59 @@
     width: 100px;
 }
 
-.mainColumn{
+.mainColumn {
     background-color: #f8f8f8;
 }
+
+.mainContent__header {
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
 // swiper
 .swiper-container {
     width: 800px;
     height: 300px;
 }
-.swiper-button-con{
+
+.swiper-button-con {
     position: relative;
+    display: flex;
+    width: 50px;
 }
+
 .swiper-button-prev,
-.swiper-button-next{
-  color: $lightGrey;
-  height: 12px;
-  width: 5px;
-  font-size: 12px;
+.swiper-button-next {
+    top: 0;
+    color: $lightGrey;
+    height: 12px;
+    width: 5px;
+    font-size: 12px;
+}
+
+:root {
+    --swiper-navigation-size: 20;
+}
+
+.mainContentent__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: $lightGrey;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+// content card
+.contentCard{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: #fff;
+    text-decoration: none;
+    color: $darkGrey;
+}
+.swiper-slide{
+    display: flex;
+    flex-wrap: wrap;
 }
