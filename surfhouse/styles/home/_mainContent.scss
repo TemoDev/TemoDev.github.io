@@ -77,8 +77,8 @@
 
 // swiper
 .swiper-container {
-    width: 800px;
-    height: 300px;
+    max-width: 850px;
+    width: 100%;
 }
 
 .swiper-button-con {
@@ -109,6 +109,14 @@
     text-transform: uppercase;
 }
 // content card
+
+.swiper-slide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 850px;
+    width: 100%;
+}
 .contentCard{
     display: flex;
     flex-direction: column;
@@ -116,8 +124,45 @@
     background-color: #fff;
     text-decoration: none;
     color: $darkGrey;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        transform: translateY(-5px);
+    }
 }
-.swiper-slide{
+
+.contentCard__desc{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 15px;
+}
+.contentCard__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: $darkGrey;
+    font-style: italic;
+    width: 120px;
+}
+.contentCard__img{
+    object-fit: contain;
+    width: 250px;
+    height: 230px;
+}
+.contentCard__currentPrice{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: $darkGrey;
+    font-style: italic;
+}
+.contentCard__lastPrice{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: #e24602;
+    font-style: italic;
+    text-decoration: line-through;
 }
