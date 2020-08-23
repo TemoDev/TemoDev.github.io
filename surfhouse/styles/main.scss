@@ -27,5 +27,6 @@ $lightGrey : #707070;
   margin: auto;
 }
 
-@import 'home/_home';
-@import 'home/_mainContent'
+@import '_home';
+@import '_mainContent';
+@import 'brands'
