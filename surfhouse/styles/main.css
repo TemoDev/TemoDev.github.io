@@ -886,6 +886,8 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .column {
@@ -896,6 +898,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .column__items {
@@ -930,7 +933,64 @@ footer {
   color: #fff;
   max-width: 205px;
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   margin: 10px 0 15px 0;
+}
+
+.footer-btn {
+  width: auto;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer-input {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff51f;
+  font-weight: 700;
+}
+
+.paymentCards {
+  margin-top: 45px;
+}
+
+.phoneNum {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.phoneNum span {
+  margin-right: 15px;
+}
+
+.email {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.email span {
+  margin-left: 15px;
+  color: #fff51f;
+}
+
+.copy {
+  background-color: #333333;
+  padding: 20px 0;
+}
+
+.copy__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyText {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */
