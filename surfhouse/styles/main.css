@@ -400,7 +400,7 @@ input::placeholder {
   margin-right: 10px;
 }
 
-.menu {
+.menu, .mainColumn-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,6 +409,11 @@ input::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #26d2fc;
+  min-width: 200px;
+}
+
+.mainColumn-menu {
+  display: none;
 }
 
 .menuTitle {
@@ -593,11 +598,6 @@ input::placeholder {
 }
 
 .swiper-container {
-  max-width: 850px;
-  width: 100%;
-}
-
-.swiper-container1 {
   max-width: 850px;
   width: 100%;
 }
@@ -832,6 +832,33 @@ input::placeholder {
   color: #e24602;
   font-style: italic;
   text-decoration: line-through;
+}
+
+@media screen and (max-width: 750px) {
+  .sideColumn {
+    display: none;
+  }
+  .mainContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .swiper-slide-active, .swiper-slide, .swiper-container {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .swiper-slide-active, .swiper-slide, .swiper-container {
+    max-width: 270px;
+    width: 100%;
+  }
+  .mainContentent__title {
+    font-size: 18px;
+  }
 }
 
 .brands {
