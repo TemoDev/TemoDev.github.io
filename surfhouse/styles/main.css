@@ -416,6 +416,42 @@ input::placeholder {
   display: none;
 }
 
+.burger {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.burger div {
+  height: 3px;
+  margin-bottom: 5px;
+  border-radius: 20%;
+  background: #fff;
+  width: 30px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.mainColumn-menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 40px;
+  background-color: #333333;
+}
+
 .menuTitle {
   font-family: 'Roboto', sans-serif;
   font-weight: 800;
@@ -424,6 +460,27 @@ input::placeholder {
   text-transform: uppercase;
   padding: 25px 0 25px 40px;
   background-color: #333333;
+}
+
+.menuTitle-mainColumn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .manu__link {
@@ -849,6 +906,16 @@ input::placeholder {
     max-width: 450px;
     width: 100%;
   }
+  .mainColumn-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .manu__link {
+    padding: 0;
+    opacity: 0;
+    height: 0;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -859,6 +926,26 @@ input::placeholder {
   .mainContentent__title {
     font-size: 18px;
   }
+}
+
+.manu__link-mainColumn-active {
+  padding: 15px 0 15px 40px;
+  height: auto;
+  opacity: 1;
+}
+
+.burger__exit1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger__exit2 {
+  opacity: 0;
+}
+
+.burger__exit3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .brands {
