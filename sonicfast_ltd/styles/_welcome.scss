@@ -1,0 +1,342 @@
+.intro {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 150px 0 0;
+}
+
+.slider__title {
+    font-size: 20px;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+}
+
+.title-sup {
+    background-color: $white;
+    color: $black;
+    font-size: 20px;
+    width: 270px;
+    padding: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.welcome__title {
+    font-family: 'Signika', sans-serif;
+    font-size: 65px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 28px;
+        height: 5px;
+        background-color: $green;
+        border-radius: 20px;
+    }
+}
+
+// door
+.door-title {
+    font-family: 'Karla', sans-serif;
+    font-size: 12.3px;
+    text-transform: uppercase;
+    color: $green;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.door__inner {
+    width: 236px;
+    border: 1px solid $white;
+    padding: 30px 0px 25px;
+    text-align: center;
+    position: relative;
+
+    img {
+        margin-top: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        max-width: 188px;
+        margin: 0 auto 35px;
+        outline: none;
+        padding: 6px;
+        background-color: transparent;
+        color: $white;
+    }
+
+    input:last-child {
+        margin-bottom: 0;
+    }
+
+    input::placeholder {
+        text-align: center;
+        color: #949292;
+        font-family: 'Inconsolata', monospace;
+        font-size: 10px;
+    }
+}
+
+.door__inner-title {
+    font-family: 'Signika', sans-serif;
+    font-size: 18.7px;
+    color: $white;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.formPassword-forget {
+    font-size: 7px;
+    color: #D8D8D8;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.doorLock-img {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 40%;
+
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-in-out;
+}
+
+.doorLock {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: $black;
+    border: 1px solid $white;
+
+    transition: all .2s ease-in-out;
+}
+
+.doorLock-door2 {
+    transform: translateX(100%);
+}
+
+.door__inner:hover {
+    .doorLock-img {
+        opacity: 0;
+        transform: translateX(300%);
+    }
+
+    .doorLock-door1 {
+        transform: translate(-100%);
+    }
+
+    .doorLock-door2 {
+        transform: translate(200%);
+    }
+}
+
+// welcome social links
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+.follow{
+    display: flex;
+    font-size: 18px;  
+    color: #615D5D;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 25px;
+
+    a{
+        text-decoration: none;
+        margin-left: 25px;
+
+        transition: all .2s ease-in-out;
+    }
+    a:hover{
+        transform: translateY(-5px);
+    }
+}
+.sayHello{
+    display: flex;
+    font-size: 18px;  
+    color: #474747;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    a{
+        text-decoration: none;
+        color: $white;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .door__inner:hover {
+        .doorLock-img {
+            opacity: 0;
+            transform: translateX(300%);
+        }
+
+        .doorLock-door1 {
+            opacity: 0;
+            transform: translate(-100%);
+        }
+
+        .doorLock-door2 {
+            opacity: 0;
+            transform: translate(200%);
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .intro {
+        padding: 20px 0;
+        padding-left: 30px;
+        flex-direction: column;
+    }
+
+    .slider__title {
+        margin-bottom: 30px;
+    }
+
+    .door__inner {
+        width: 200px;
+        border: 1px solid $white;
+        padding: 30px 0px 25px;
+        
+        img{
+            margin-top: 15px;
+        }
+
+        input{
+            margin-bottom: 15px;
+        }
+    }
+
+    .welcome__title{
+        font-size: 50px;
+    }
+    .title-sup{
+        font-size: 16px;
+        width: 220px;
+    }
+    .slider__title{
+        font-size: 16px;
+    }
+    .door-title{
+        text-align: start;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .door__inner-title{
+        margin-bottom: 30px;
+    }
+    .social{
+        margin-top: 30px;
+    }
+    .follow{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width : 420px){
+    .intro{
+        padding-left: 10px;
+    }
+    .welcome__title{
+        font-size: 35px;
+    }
+    .title-sup{
+        font-size: 14px;
+        width: 200px;
+    }
+    .follow{
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .sayHello{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 336px){
+    .title-sup{
+        font-size: 12px;
+        width: 180px;
+    }
+    .door__inner{
+        width: 160px;
+        input{
+            width: 144px;
+        }
+    }
+}
+@media screen and (max-width : 288px){
+    .title-sup{
+        font-size: 10px;
+        width: 140px;
+    }
+    .door__inner{
+        width: 160px;
+        input{
+            width: 144px;
+        }
+    }
+    .social{
+        flex-direction: column;
+    }
+    .follow{
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        flex-wrap: wrap;
+        img{
+            margin-bottom: 5px;
+        }
+    }
+    .sayHello{
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+}
+
+// social links responsive - height
+
+@media screen and (max-height: 710px){
+    .social{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-height: 650px){
+    .social{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-height: 625px){
+    .lockInside{
+        display: none;
+    }
+    .social{
+        margin-top: 70px;
+    }
+}
+@media screen and (max-height: 575px){
+    .social{
+        margin-top: 20px;
+    }
+}
+
