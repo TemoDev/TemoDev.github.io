@@ -1,0 +1,35 @@
+// colors
+$black : #000000;
+$green : #24FF00;
+$white : #ffffff;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    // font-family: 'Karla', sans-serif;
+    // font-family: 'Signika', sans-serif;
+    color: $white;
+    background-color: $black;
+    overflow-y: hidden;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContent{
+    display: flex;
+}
+
+@import 'header';
+@import 'swiper';
+@import 'welcome';
+@import 'vision';
+@import 'team';
+@import 'news';
+@import 'contact';

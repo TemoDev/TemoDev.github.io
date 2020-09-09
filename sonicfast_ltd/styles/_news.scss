@@ -1,0 +1,104 @@
+.news{
+    padding: 150px 45px 0;
+}
+.news-titles{
+    display: flex;
+    margin-bottom: 120px;
+}
+.slider__title-news{
+    margin-bottom: 0;
+}
+.news-more{
+    margin-left: 35px;
+    font-family: 'Karla', sans-serif;
+    color: $green;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-self: end;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.swiper-slide-news{
+    margin-left: 80px;
+    max-width: 220px;
+    width: 100%;
+    min-width: 120px;
+}
+.news-card{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        transform: translateY(-5px);
+    }
+}
+
+
+.newsCard-img{
+    max-width: 218px;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+.newsCard-name{
+    font-family: 'Karla', sans-serif;
+    font-size: 15.9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+}
+.newsCard-desc{
+    font-size: 10.6px;
+    color: $white;
+    margin-top: 15px;
+}
+
+// responsive
+
+@media screen and (max-width: 950px){
+    .newsCard-name{
+        font-size: 12px;
+    }
+    .newsCard-desc{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 490px){
+    .news{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 400px){
+    .swiper-slide-news{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 310px){
+    .news{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+// resposive - height
+
+@media screen and (max-height: 575px){
+    .news{
+        padding-top: 60px;
+    }
+}
+@media screen and (max-height: 505px){
+    .news{
+        padding-top: 30px;
+    }
+    .news-titles{
+        margin-bottom: 60px;
+    }
+}
