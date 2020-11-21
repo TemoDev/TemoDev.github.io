@@ -1,0 +1,136 @@
+.aboutUs{
+    margin: 35px 0;
+    background-color: $darkBlue;
+    padding: 80px;
+    clip-path: polygon(0 0, 0 0, 0 85%, 0 85%);
+}
+
+.aboutUs-card{
+    max-width: 1045px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    align-items: center;
+    overflow: hidden;
+}
+
+// about us inner style
+.aboutUsCard-content{
+    padding-left: 35px;
+    width: 50%;
+}
+.aboutUs-title{
+    color: $darkBlue;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.aboutUs-text{
+    font-size: 15px;
+    color: $darkBlue;
+    font-weight: 400;
+    max-width: 350px;
+    width: 100%;
+}
+.aboutUsCard-img{
+    width: 50%;
+}
+
+.aboutUs-content:after{
+    content: '';
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    width: 160px;
+    margin-top: 100px;
+    z-index: 1000000;
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width:980px){
+    .aboutUs-title{
+        font-size: 30px;
+    }
+    .aboutUs-text{
+        font-size: 12px;
+        max-width: 270px;
+    }
+}
+@media screen and (max-width:800px){
+    .aboutUs-title{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .aboutUs-text{
+        font-size: 12px;
+        max-width: 270px;
+    }
+    .aboutUsCard-content{
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 755px){
+    .aboutUs{
+        padding: 40px;
+    }
+    .aboutUs-card{
+        max-width: 740px;
+    }
+}
+@media screen and (max-width: 648px){
+    .aboutUs-title{
+        font-size: 20px;
+    }
+    .aboutUs-text{
+        font-size: 10px;
+        max-width: 240px;
+    }
+}
+@media screen and (max-width: 570px){
+    .aboutUs-title{
+        font-size: 15px;
+    }
+    .aboutUs-text{
+        font-size: 8px;
+        max-width: 260px;
+    }
+    .aboutUsCard-img{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 490px){
+    .aboutUs{
+        background: url('../../img/2.jpg') center/cover;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+    }
+    .aboutUsCard-img{
+        display: none;
+    }
+    .aboutUs-card{
+        justify-content: center;
+        padding: 10px 30px;
+        max-width: 500px;
+    }
+    .aboutUs-title{
+        font-size: 25px;
+    }
+    .aboutUs-text{
+        font-size: 12px;
+        margin: auto;
+        width: 100%;
+    }
+    .aboutUsCard-content{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+}

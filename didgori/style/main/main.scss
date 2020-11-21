@@ -1,0 +1,60 @@
+@font-face{
+    font-family: mgvlovani;
+    src: url('../../fonts/bpg_mrgvlovani_caps_2010.ttf');
+}
+
+// main colors
+$darkBlue: #0F3057;
+$white: #E7E7DE;
+$lightBlue: #008891;
+
+body{
+    font-family: mgvlovani;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+
+// ----------------main-------------
+@import './nav';
+@import './intro';
+@import './services';
+@import './about';
+@import './offers';
+@import './production';
+@import './contact';
+
+// -------------news---------------
+
+@import '../news/newsIntro';
+@import '../news/newsCards';
+
+// -------------geodezia------------
+
+@import '../geodezia/geodeziaIntro';
+
+// ------------hydrogeologia------------
+
+@import '../hydro/hydro';
+
+// --------------agaraki---------------
+
+@import '../agaraki/agaraki'
