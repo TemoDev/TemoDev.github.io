@@ -1,0 +1,105 @@
+.hydro-intro{
+    background: url('../../img/2.jpg') center/cover;
+    height: 50vh;
+    width: 100%;
+}
+.hydro-overlay{
+    background-color: rgba(0,0,0, .5);
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-weight: bold;
+    color: $white;
+}
+
+// hydro content
+
+.hydro-content{
+    margin: 60px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hydroInner-title{
+    font-size: 30px;
+    color: $darkBlue;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.hydroInner-text{
+    max-width: 600px;
+    width: 100%;
+    color: $darkBlue;
+    font-size: 15px;
+}
+
+// hydro img
+.hydroContent-img{
+    max-width: 700px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+// responsive
+
+@media screen and (max-width: 930px){
+  .hidroIntro-title{
+      font-size: 60px;
+  }  
+  .hydroContent-img{
+      max-width: 450px;
+  }
+}
+@media screen and (max-width: 725px){
+  .hidroIntro-title{
+      font-size: 45px;
+  }  
+  .hydroContent-img{
+      max-width: 350px;
+  }
+  .hydroInner-title{
+      font-size: 25px;
+      margin-bottom: 20px;
+  }
+  .hydroInner-text{
+      font-size: 12px;
+  }
+}
+@media screen and (max-width: 675px){ 
+  .hydro-content{
+      flex-direction: column;
+  }
+  .hydroInner-title{
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  .hydroInner-text{
+      text-align: center;
+  }
+  .hydro-inner{
+      margin-bottom: 20px;
+  }
+  .hydroContent-img{
+      max-width: 500px;
+      margin: 0;
+  }
+}
+
+@media screen and(max-width: 550px){
+    .hidroIntro-title{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:435px){
+    .hidroIntro-title{
+        font-size: 25px;
+    }
+    .hydroInner-title{
+        font-size: 15px;
+    }
+}
