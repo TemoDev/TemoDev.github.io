@@ -16,7 +16,12 @@ body {
           box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -26,6 +31,45 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 0 15px;
   margin: auto;
+}
+
+.main-logo {
+  text-decoration: none;
+  position: fixed;
+  top: 10px;
+  left: 100px;
+  z-index: 100;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50PX;
+  width: 50PX;
+}
+
+.main-logo img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-logo {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .main-logo {
+    left: 30px;
+  }
 }
 
 nav {
@@ -197,23 +241,25 @@ nav {
 }
 
 .swiper-container {
-  height: 65vh;
+  height: 90vh;
   background-color: #000000;
 }
 
 .intro-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-  opacity: .5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .3;
 }
 
 .intro {
   position: absolute;
   left: 100px;
   z-index: 10;
-  top: 15%;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .introTitle {
@@ -270,7 +316,6 @@ nav {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   height: 35vh;
-  background-color: #0F3057;
 }
 
 .service-card {
@@ -292,6 +337,45 @@ nav {
 .service-card:hover .service-title {
   background-color: #E7E7DE;
   color: #0F3057;
+}
+
+.service-card:hover .service-cards-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.service-card-geodezia {
+  background: url("../../img/bg2.jpg") center/cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.service-card-hydro {
+  background: url("../../img/10.jpg") center/cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.service-card-agaraki {
+  background: url("../../img/5.jpg") center/cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.service-cards-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .service-title {
@@ -795,6 +879,7 @@ nav {
 .contact-map {
   max-width: 400px;
   width: 100%;
+  pointer-events: none;
 }
 
 .footer {
@@ -980,11 +1065,11 @@ body {
 
 .geoIntro {
   height: 50vh;
-  background: url("../../img/2.jpg") center/cover;
+  background: url("../../img/11.jpg") center/cover;
 }
 
 .geoIntroOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 50vh;
   display: -webkit-box;
@@ -1075,7 +1160,9 @@ body {
 }
 
 .hydro-intro {
-  background: url("../../img/2.jpg") center/cover;
+  background: url("../../img/hydro-intro.jpg") center/cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 50vh;
   width: 100%;
 }
@@ -1198,7 +1285,7 @@ body {
 }
 
 .agaraki-intro {
-  background: url("../../img/2.jpg") center/cover;
+  background: url("../../img/4.jpg") center/cover;
   height: 60vh;
   width: 100%;
 }

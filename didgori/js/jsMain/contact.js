@@ -12,7 +12,8 @@ contactTl
 }, 'first')
 .from('.contact-map', {
     scaleY:0,
-    opacity:0
+    opacity:0,
+    // pointerEvents: 'visible',
 }, 'first');
 
 ScrollTrigger.create({

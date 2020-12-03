@@ -4,7 +4,6 @@
     width: 100%;
     flex-wrap: nowrap;
     height: 35vh;
-    background-color: $darkBlue;
 }
 .service-card{
     width: 33.3%;
@@ -19,8 +18,36 @@
             background-color: $white;
             color: $darkBlue;
         }
+        .service-cards-overlay{
+            background-color: rgba(0,0,0,.7);
+        }
     }
 }
+
+// costum bg cards
+.service-card-geodezia{
+    background: url('../../img/bg2.jpg') center/cover;
+    object-fit: contain;
+}
+.service-card-hydro{
+    background: url('../../img/10.jpg') center/cover;
+    object-fit: contain;
+}
+.service-card-agaraki{
+    background: url('../../img/5.jpg') center/cover;
+    object-fit: contain;
+}
+// services overlay
+.service-cards-overlay{
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+}
+
 .service-title{
     padding: 12px 40px;
     font-size: 20px;

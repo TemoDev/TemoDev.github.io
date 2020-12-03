@@ -1,18 +1,21 @@
 .swiper-container{
-    height: 65vh;
+    height: 90vh;
     background-color: #000000;
 }
 .intro-img{
     width: 100%;
     height: 100%;
-    object-fit: fill;
-    opacity: .5;
+    object-fit: cover;
+    opacity: .3;
 }
+
+// intro titles container
 .intro{
     position: absolute;
     left: 100px;
     z-index: 10;
-    top: 15%;
+    top: 40%;
+    transform: translateY(-50%);
 }
 .introTitle{
     font-size: 75px;
