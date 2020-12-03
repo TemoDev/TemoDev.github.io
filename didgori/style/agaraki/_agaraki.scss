@@ -33,10 +33,14 @@
 
 // -----agaraki cards---------
 
+.agaraki-cards{
+    padding-bottom: 120px;
+}
+
 .agaraki-card{
     display: flex;
     justify-content: center;
-    margin: 60px 10px;
+    margin: 50px 10px;
 }
 .agarakiCard-img{
     max-width: 400px;

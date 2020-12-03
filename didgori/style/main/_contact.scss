@@ -48,8 +48,14 @@
     width: 100%;
     background-color: $darkBlue;
     color: $white;
-    padding: 20px 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    margin-top: -60px;
+    clear: both;
 }
 
 @media screen and (max-width:830px){
