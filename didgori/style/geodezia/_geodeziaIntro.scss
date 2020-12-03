@@ -4,7 +4,8 @@ body{
 
 .geoIntro{
     height: 50vh;
-    background: url('../../img/11.jpg') center/cover;
+    background: url('../../img/15.jpg') center/cover;
+    object-fit: contain;
 }
 .geoIntroOverlay{
     background-color: rgba(0,0,0,.5);

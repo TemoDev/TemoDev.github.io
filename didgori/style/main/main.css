@@ -350,7 +350,7 @@ nav {
 }
 
 .service-card-hydro {
-  background: url("../../img/10.jpg") center/cover;
+  background: url("../../img/17.jpg") center/cover;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1065,7 +1065,9 @@ body {
 
 .geoIntro {
   height: 50vh;
-  background: url("../../img/11.jpg") center/cover;
+  background: url("../../img/15.jpg") center/cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .geoIntroOverlay {
