@@ -1,5 +1,5 @@
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 *,
@@ -21,8 +21,11 @@ nav {
   padding-right: 0rem;
 }
 
+.navbar-brand img {
+  width: 100px;
+}
+
 .navbar-light .nav-link {
-  font-weight: 500;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
@@ -74,16 +77,12 @@ nav {
   font-size: 5rem;
   letter-spacing: .2rem;
   font-weight: 700;
-  -webkit-filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
 }
 
 .intro-sup {
   margin-top: .5rem;
   font-size: 1.875rem;
-  -webkit-filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .intro-btn {
@@ -93,7 +92,6 @@ nav {
   margin-top: 4rem;
   font-size: 1.25rem;
   color: #08D974;
-  font-weight: 500;
   padding-top: .6rem;
   padding-bottom: .6rem;
 }
@@ -170,6 +168,97 @@ nav {
   }
   .intro-video-inner {
     height: 80%;
+  }
+}
+
+.container-about {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.container-about .col {
+  padding: 0;
+}
+
+.about-img {
+  width: 75%;
+  -webkit-filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.3));
+}
+
+.about-imgCol::before {
+  content: '';
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  top: -20px;
+  z-index: -1;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #08D974, #11BECC);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 4rem;
+  position: relative;
+  line-height: 110%;
+}
+
+.section-title:after {
+  content: '';
+  max-width: 9.375rem;
+  width: 100%;
+  height: 0.438rem;
+  display: block;
+  margin: 1.8rem 0 3.125rem;
+  background-color: #08D974;
+  border-radius: 20px;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  font-weight: 200;
+  max-width: 600px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1029px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+  .section-title:after {
+    max-width: 5.5rem;
+  }
+  .section-text {
+    font-size: 0.8rem;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .section-title {
+    font-size: 2.8rem;
+  }
+  .section-title:after {
+    max-width: 5rem;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .section-text {
+    font-size: 0.7rem;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .row-about-content {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .section-title:after {
+    max-width: 5rem;
+    margin: 1.5rem auto 2.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
