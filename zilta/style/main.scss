@@ -153,16 +153,13 @@ nav {
     }
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 768px) {
+    .intro-title{
+        margin-top: 7rem;
+    }
     .intro-sup {
         font-size: 1.1rem;
     }
-
-    .intro-row {
-        display: flex;
-        flex-direction: column;
-    }
-
     .intro-video {
         height: 40vh;
 
@@ -261,7 +258,7 @@ nav {
 
 @media screen and (max-width: 576px){
     .row-about-content{
-        margin-top: 5rem;
+        margin-bottom: 5rem;
         text-align: center;
     }
     .section-title{
