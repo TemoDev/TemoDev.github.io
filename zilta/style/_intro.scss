@@ -1,0 +1,94 @@
+// intro content
+.intro-title {
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+}
+
+.intro-sup {
+    margin-top: .5rem;
+    font-size: 1.875rem;
+    font-weight: 200;
+}
+
+.intro-btn {
+    width: 220px;
+    border: 1px solid $green;
+    border-radius: 50px;
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: $green;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+
+    &:hover {
+        background-color: $green;
+        color: white;
+    }
+}
+
+.intro-video {
+    height: 100vh;
+
+    &::before {
+        content: '';
+        width: 85%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, $green, $blue);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.intro-video-inner {
+    filter: drop-shadow(0 .5rem .5rem rgba(0, 0, 0, .3));
+    max-width: 750px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1096px) {
+    .intro-sup {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .intro-sup {
+        font-size: 1.1rem;
+    }
+
+    .intro-title {
+        font-size: 3.5rem;
+    }
+
+    .intro-btn {
+        font-size: 1;
+        width: 150px;
+        font-weight: 400;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-title{
+        margin-top: 7rem;
+    }
+    .intro-sup {
+        font-size: 1.1rem;
+    }
+    .intro-video {
+        height: 40vh;
+
+        &::before {
+            height: 100%;
+        }
+    }
+
+    .intro-video-inner {
+        height: 80%;
+    }
+}

@@ -1,0 +1,38 @@
+// products
+
+.products-container {
+    margin: 12rem auto;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.product-item {
+    width: 100%;
+}
+
+.swiper-slide:hover {
+    .product-desc {
+        opacity: 1;
+    }
+}
+
+.product-desc {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: rgba(249, 215, 28, .7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}

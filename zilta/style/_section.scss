@@ -1,0 +1,65 @@
+
+// section styles
+.section-title{
+    font-weight: 700;
+    font-size: 4rem;
+    position: relative;
+    line-height: 110%;
+
+    &:after{
+        content: '';
+        max-width: 9.375rem;
+        width: 100%;
+        height: 0.438rem;
+        display: block;
+        margin: 1.8rem 0 3.125rem;
+        background-color: $green;
+        border-radius: 20px;  
+    }
+}
+
+.section-text{
+    font-size: 1.2rem;
+    font-weight: 200;
+    max-width: 600px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1029px){
+    .section-title{
+        font-size: 3.5rem;
+        &:after{
+            max-width: 5.5rem;
+        }
+    }
+    .section-text{
+        font-size: 0.8rem;
+        max-width: 450px;
+    }
+}
+@media screen and (max-width:645px){
+    .section-title{
+        font-size: 2.8rem;
+        &:after{
+            max-width: 5rem;
+            margin: 1.5rem 0 2.5rem;
+        }
+    }
+    .section-text{
+        font-size: 0.7rem;
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .row-about-content{
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    .section-title{
+        &:after{
+            max-width: 5rem;
+            margin: 1.5rem auto 2.5rem;
+        }
+    }
+}
