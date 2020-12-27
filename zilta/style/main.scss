@@ -80,7 +80,14 @@ nav {
 }
 
 .swiper-button-prev, .swiper-button-next{
-    color: $green;
+    color: $green;    
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 22px;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, .3));
 }
 .swiper-slide{
     width: 25%;
@@ -91,3 +98,4 @@ nav {
 @import './section';
 @import './about';
 @import './products';
+@import './gallery';

@@ -77,6 +77,15 @@ nav {
   color: #08D974;
 }
 
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 22px;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.3));
+}
+
 .swiper-slide {
   width: 25%;
 }
@@ -268,6 +277,15 @@ nav {
   margin: 12rem auto;
 }
 
+.center-title {
+  text-align: center;
+}
+
+.center-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .swiper-slide {
   text-align: center;
 }
@@ -304,5 +322,13 @@ nav {
   opacity: 0;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+}
+
+.gallery-img {
+  width: 100%;
+  margin-bottom: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20rem;
 }
 /*# sourceMappingURL=main.css.map */
