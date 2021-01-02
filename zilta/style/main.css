@@ -1,5 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 *,
@@ -347,7 +348,7 @@ nav {
 
 .currentProject-container {
   margin: 180px auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .currentProject-container .row {
@@ -399,6 +400,7 @@ nav {
 
 .projectContent-reverse {
   left: -10%;
+  right: auto;
 }
 
 .currentProject-img-reverse img {
