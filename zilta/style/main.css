@@ -75,6 +75,15 @@ nav {
 
 .swiper-button-prev, .swiper-button-next {
   color: #08D974;
+  outline: none;
+}
+
+.swiper-button-prev {
+  left: -8px;
+}
+
+.swiper-button-next {
+  right: -8px;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
@@ -200,6 +209,15 @@ nav {
   border-radius: 20px;
 }
 
+.center-title {
+  text-align: center;
+}
+
+.center-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section-text {
   font-size: 1.2rem;
   font-weight: 200;
@@ -277,13 +295,8 @@ nav {
   margin: 12rem auto;
 }
 
-.center-title {
-  text-align: center;
-}
-
-.center-title::after {
-  margin-left: auto;
-  margin-right: auto;
+.products-inner {
+  position: relative;
 }
 
 .swiper-slide {
@@ -329,6 +342,110 @@ nav {
   margin-bottom: 25px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 20rem;
+  height: 350px;
+}
+
+.currentProject-container {
+  margin: 180px auto;
+  padding: 0 10px;
+}
+
+.currentProject-container .row {
+  margin-bottom: 120px;
+}
+
+.currentProject-content {
+  position: absolute;
+  padding: 50px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#08D974), to(#11BECC));
+  background: linear-gradient(to bottom right, #08D974, #11BECC);
+  right: -10%;
+  z-index: 1;
+  bottom: -10%;
+}
+
+.projectContent-title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: white;
+}
+
+.projectContent-text {
+  font-size: 1rem;
+  max-width: 560px;
+  width: 100%;
+  color: white;
+  font-weight: 300;
+}
+
+.currentProject-img img {
+  max-width: 650px;
+  width: 100%;
+}
+
+.currentProject-img::before {
+  content: '';
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  z-index: -1;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom right, #08D974, #11BECC);
+}
+
+.projectContent-reverse {
+  left: -10%;
+}
+
+.currentProject-img-reverse img {
+  margin-left: auto;
+}
+
+.currentProject-img-reverse::before {
+  left: 20px;
+}
+
+@media screen and (max-width: 1450px) {
+  .currentProject-img::before {
+    right: -20px;
+  }
+  .currentProject-img-reverse::before {
+    left: -20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .currentProject-content {
+    padding: 35px;
+  }
+  .projectContent-title {
+    font-size: 1.7rem;
+    margin-bottom: .8rem;
+  }
+  .projectContent-text {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .currentProject-content {
+    padding: 20px;
+    right: 0;
+    position: relative;
+  }
+  .projectContent-title {
+    font-size: 1.6rem;
+    margin-bottom: .7rem;
+  }
+  .projectContent-text {
+    font-size: .8rem;
+  }
+  .projectContent-reverse {
+    left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

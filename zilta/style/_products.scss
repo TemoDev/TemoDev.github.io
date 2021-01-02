@@ -3,14 +3,9 @@
 .products-container {
     margin: 12rem auto;
 }
-.center-title{
-    text-align: center;
-    &::after{
-        margin-left: auto;
-        margin-right: auto;
-    }
+.products-inner{
+    position: relative;
 }
-
 .swiper-slide {
     text-align: center;
 }
