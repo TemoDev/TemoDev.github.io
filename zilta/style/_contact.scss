@@ -1,0 +1,31 @@
+.contact-container{
+    padding: 40px 15px;
+}
+.contact-inner{
+    display: flex;
+    flex-direction: column;
+}
+.contact-item{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 25px;
+    img{
+        max-width: 35px;
+    }
+    &:hover{
+        text-decoration: underline;
+        color: $green;
+    }
+}
+.section-item-content{
+    margin-left: 15px;
+}
+
+.footer{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .8rem;
+    text-align: center;
+}
