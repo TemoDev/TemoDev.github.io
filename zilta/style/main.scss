@@ -6,12 +6,14 @@ $orange : #F9D71C;
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 *,
 *:after,
 *:before {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -41,6 +43,9 @@ nav {
 .navbar-light .nav-item .nav-link:active,
 .navbar-light .nav-item .nav-link:focus,
 .navbar-light .nav-item:hover .nav-link {
+    color: $green;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
     color: $green;
 }
 

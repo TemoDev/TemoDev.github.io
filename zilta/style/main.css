@@ -1,6 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -8,6 +9,7 @@ body {
 *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -35,6 +37,10 @@ nav {
 .navbar-light .nav-item .nav-link:active,
 .navbar-light .nav-item .nav-link:focus,
 .navbar-light .nav-item:hover .nav-link {
+  color: #08D974;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: #08D974;
 }
 
