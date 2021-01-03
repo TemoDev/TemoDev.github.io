@@ -1,7 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -106,6 +105,10 @@ nav {
   width: 25%;
 }
 
+.introContent-col {
+  overflow: hidden;
+}
+
 .intro-title {
   font-size: 5rem;
   letter-spacing: .2rem;
@@ -136,6 +139,7 @@ nav {
 
 .intro-video {
   height: 100vh;
+  overflow: hidden;
 }
 
 .intro-video::before {

@@ -1,4 +1,8 @@
 // intro content
+.introContent-col{
+    overflow: hidden;
+}
+
 .intro-title {
     font-size: 5rem;
     letter-spacing: .2rem;
@@ -29,6 +33,7 @@
 
 .intro-video {
     height: 100vh;
+    overflow: hidden;
 
     &::before {
         content: '';
