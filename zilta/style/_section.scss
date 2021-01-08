@@ -1,13 +1,86 @@
 
 // section styles
-.section-title{
+.about-title{
     font-weight: 700;
     font-size: 4rem;
     position: relative;
     line-height: 110%;
 
-    &:after{
+    &::after{
         content: '';
+        transform-origin: left;
+        max-width: 9.375rem;
+        width: 100%;
+        height: 0.438rem;
+        display: block;
+        margin: 1.8rem 0 3.125rem;
+        background-color: $green;
+        border-radius: 20px;  
+    }
+}
+.products-title{
+    font-weight: 700;
+    font-size: 4rem;
+    position: relative;
+    line-height: 110%;
+
+    &::after{
+        content: '';
+        transform-origin: left;
+        max-width: 9.375rem;
+        width: 100%;
+        height: 0.438rem;
+        display: block;
+        margin: 1.8rem 0 3.125rem;
+        background-color: $green;
+        border-radius: 20px;  
+    }
+}
+.gallery-title{
+    font-weight: 700;
+    font-size: 4rem;
+    position: relative;
+    line-height: 110%;
+
+    &::after{
+        content: '';
+        transform-origin: left;
+        max-width: 9.375rem;
+        width: 100%;
+        height: 0.438rem;
+        display: block;
+        margin: 1.8rem 0 3.125rem;
+        background-color: $green;
+        border-radius: 20px;  
+    }
+}
+.currentProject-title{
+    font-weight: 700;
+    font-size: 4rem;
+    position: relative;
+    line-height: 110%;
+
+    &::after{
+        content: '';
+        transform-origin: left;
+        max-width: 9.375rem;
+        width: 100%;
+        height: 0.438rem;
+        display: block;
+        margin: 1.8rem 0 3.125rem;
+        background-color: $green;
+        border-radius: 20px;  
+    }
+}
+.contact-title{
+    font-weight: 700;
+    font-size: 4rem;
+    position: relative;
+    line-height: 110%;
+
+    &::after{
+        content: '';
+        transform-origin: left;
         max-width: 9.375rem;
         width: 100%;
         height: 0.438rem;
@@ -22,6 +95,7 @@
     &::after{
         margin-left: auto;
         margin-right: auto;
+        transform-origin: center;
     }
 }
 .section-text{

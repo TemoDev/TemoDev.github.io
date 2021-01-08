@@ -1,6 +1,7 @@
 .currentProject-container {
     margin: 180px auto;
     padding: 0 20px;
+    overflow: hidden;
 
     .row {
         margin-bottom: 120px;
@@ -96,6 +97,7 @@
         padding: 20px;
         right: 0;
         position: relative;
+        transform: translateY(50%);
     }
     .projectContent-title{
         font-size: 1.6rem;
