@@ -137,7 +137,6 @@ gsap.to(".currentProject-content", {
       start: "top 80%", // the default values
       end: "bottom top",
       scrub: true,
-      markers:true
     }, 
   });
 
