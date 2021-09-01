@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="./styles/main.css">
-
     <!-- Link Google FOnts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"  />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./styles/main.css">
 
 </head>
 <body>
@@ -53,7 +57,7 @@
 
             <div class="currentData-table">
 
-            <div class="row">
+                <div class="row">
                 <div class="row-card">
                     <div class="row-title">City</div>
                     <div class="row-data row-data-city">London</div>
@@ -66,9 +70,9 @@
                     <div class="row-title">Sunset</div>
                     <div class="row-data row-title-sunSet">19:42</div>
                 </div> <!-- row card -->
-            </div> <!-- row -->
+                </div> <!-- row -->
 
-            <div class="row">
+                <div class="row">
                 <div class="row-card">
                     <div class="row-title">Temperature</div>
                     <div class="row-data temp-circle-small row-data-temp">16</div>
@@ -81,9 +85,9 @@
                     <div class="row-title">Temp-min</div>
                     <div class="row-data temp-circle-small row-temp-min">14</div>
                 </div> <!-- row card -->
-            </div> <!-- row -->
+                </div> <!-- row -->
 
-            <div class="row">
+                <div class="row">
                 <div class="row-card">
                     <div class="row-title">Feels Like</div>
                     <div class="row-data temp-circle-small row-temp-feels">18</div>
@@ -96,15 +100,40 @@
                     <div class="row-title">Pressure</div>
                     <div class="row-data row-pressure">1015mbar</div>
                 </div> <!-- row card -->
-            </div> <!-- row -->
+                </div> <!-- row -->
 
             </div><!--currentData-table-->
+
+            <div class="forecast-title">4 Day / 3 Hour Forecast</div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- <div class="forecast-card swiper-slide">
+                        <div class="forecast-card-header">
+                            <div class="forecast-day">Tuesday</div>
+                            <img src="./Icons/rain-n.svg" alt="icon" class="forecast-icon"> -->
+                        <!-- </div> -->
+                        <!--forecast-card-header-->
+                        
+                        <!-- <div class="forecast-day-info">
+                            <span class="forecast-temp temp-circle-small">16</span>
+                            <span class="forecast-cond">Sunny</span> -->
+                        <!-- </div> -->
+    
+                        <!-- <div class="forecast-date">2021-08-28</div> -->
+                    <!-- </div> -->
+                </div>
+            </div>                    
         </div>
     </div>
 
     <img class="bg">
 
     <!-- scripts -->
+
+    <!-- Swiper JS for forecast row -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

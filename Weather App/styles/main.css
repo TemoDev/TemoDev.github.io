@@ -149,8 +149,81 @@ h6 {
   margin-right: 25px;
 }
 
+.forecast-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 55px 0 40px;
+}
+
+.forecast-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forecast-card {
+  background-color: #2B2B2B;
+  width: 215px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.forecast-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px;
+}
+
+.forecast-day {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.forecast-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.forecast-day-info {
+  text-align: center;
+}
+
+.forecast-temp {
+  font-size: 36px;
+  font-weight: 500;
+  margin: auto;
+}
+
+.forecast-cond {
+  font-size: 13px;
+  margin-left: 6px;
+  margin-bottom: 12px;
+}
+
+.forecast-date {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.forecast-time {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
 .data-con {
   height: 100vh;
+  overflow-y: auto;
   width: 40vw;
   background-color: rgba(33, 33, 33, 0.8);
   padding: 50px 40px;

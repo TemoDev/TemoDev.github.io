@@ -27,6 +27,11 @@ const rowPressure = document.querySelector('.row-pressure');
 // Details
 const sunRise = document.querySelector('.row-title-sunRise');
 
+// forecast
+// const forecastCardHeader = document.querySelector('.forecast-card-header');
+const swiperWrapper = document.querySelector('.swiper-wrapper');
+
+
 // API Parameters for Openweather
 let cityName = 'Tbilisi';
 const apiKey = '60bbf5fb6e2789ddd033210d95b1df71';
@@ -35,6 +40,65 @@ const apiKey = '60bbf5fb6e2789ddd033210d95b1df71';
 let mainTemp;
 let weatherDetails;
 let weatherIcon;
+
+// forecast arrays
+const myArr1 = [];
+const myArr2 = [];
+const myArr3 = [];
+const myArr4 = [];
+
+function customIcons(source, target) {
+  switch(source) {
+    case '01d':
+      target.src = './Icons/sun.svg';
+    break;
+
+    case '01n':
+      target.src = './Icons/moon.svg';
+    break;
+
+    case '02n':
+    case '02d':
+      target.src = './Icons/few-clouds-d.svg';
+    break;
+
+    case '03n':
+    case '03d':
+      target.src = './Icons/cloud.svg';
+    break;
+
+    case '04d':
+    case '04n':
+      target.src = './Icons/broken-clouds.svg';
+    break;
+
+    case '09d':
+    case '09n':
+      target.src = './Icons/broken-clouds.svg';
+    break;
+
+    case '10n':
+    case '10d':
+      target.src = './Icons/rain-d.svg';
+    break;
+    
+    case '11n':
+    case '11d':
+      target.src = './Icons/thunderstorm.svg';
+    break;
+
+    case '13n':
+    case '13d':
+      target.src = './Icons/snow.svg';
+    break;
+
+    case '50n':
+    case '50d':
+      target.src = './Icons/mist.svg';
+    break;
+
+  }
+}
 
 // Pexels api key
 const pexelsKey = `563492ad6f91700001000001fe3db27c7c6845d3a85eec010fa8f6c4`;
@@ -49,6 +113,13 @@ const weatherApi = async () => {
   return weatherData;
 
 };
+
+const weatherForcastApi = async () => {
+  const getForecastApi = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=${apiKey}`);
+  const forecastData = await getForecastApi.json();
+
+  return forecastData;
+}
 
 const pexelsApi  = async () => {
   // get background images
@@ -111,56 +182,7 @@ btnMain.addEventListener('click', () =>{
       weatherDesc.innerHTML = weatherDetails;
       // weatherCondIcon.src = "http://openweathermap.org/img/w/" + weatherIcon + ".png";
 
-      switch(weatherIcon) {
-        case '01d':
-          weatherCondIcon.src = './Icons/sun.svg';
-        break;
-
-        case '01n':
-          weatherCondIcon.src = './Icons/moon.svg';
-        break;
-
-        case '02n':
-        case '02d':
-          weatherCondIcon.src = './Icons/few-clouds-d.svg';
-        break;
-
-        case '03n':
-        case '03d':
-          weatherCondIcon.src = './Icons/cloud.svg';
-        break;
-
-        case '04d':
-        case '04n':
-          weatherCondIcon.src = './Icons/broken-clouds.svg';
-        break;
-
-        case '09d':
-        case '09n':
-          weatherCondIcon.src = './Icons/broken-clouds.svg';
-        break;
-
-        case '10n':
-        case '10d':
-          weatherCondIcon.src = './Icons/rain-d.svg';
-        break;
-        
-        case '11n':
-        case '11d':
-          weatherCondIcon.src = './Icons/thunderstorm.svg';
-        break;
-
-        case '13n':
-        case '13d':
-          weatherCondIcon.src = './Icons/snow.svg';
-        break;
-
-        case '50n':
-        case '50d':
-          weatherCondIcon.src = './Icons/mist.svg';
-        break;
-
-      }
+      customIcons(weatherIcon, weatherCondIcon);
 
       // Detailed informtaion on right side
       rowDataCity.innerHTML = data.name;
@@ -172,8 +194,67 @@ btnMain.addEventListener('click', () =>{
       rowPressure.innerHTML = data.main.pressure + "mbar";
 
       // Display values in console log
-      console.log(data);
+      // console.log(data);
     });
+
+    // get forecast data
+
+  weatherForcastApi()
+    .then(data => {
+      myArr1.push(data.list.slice(4, 12));
+      myArr2.push(data.list.slice(12, 20));
+      myArr3.push(data.list.slice(20, 28));
+      myArr4.push(data.list.slice(28, 36));
+      console.log(myArr1);
+
+      myArr1[0].forEach( e => {
+        const forecastUnix = e.dt;
+        const forecastTime = new Date(forecastUnix * 1000);
+        console.log(e)
+
+        const forecastCard = document.createElement('div');
+        forecastCard.classList.add('forecast-card');
+        forecastCard.classList.add('swiper-slide');
+        swiperWrapper.appendChild(forecastCard);
+
+        const forecastCardHeader = document.createElement('div');
+        forecastCardHeader.classList.add('forecast-card-header')
+        forecastCard.appendChild(forecastCardHeader);
+
+        const forecastDay = document.createElement('p');
+        forecastDay.classList.add('forecast-day');
+        forecastCardHeader.appendChild(forecastDay);
+        forecastDay.innerHTML = weekDays[forecastTime.getDay()];
+
+        const forecastIcon = document.createElement('img');
+        forecastIcon.classList.add('forecast-icon');
+        forecastCardHeader.appendChild(forecastIcon);
+        forecastIcon.alt= "forecast icon";
+        forecastIcon.src= "";
+        customIcons(e.weather[0].icon, forecastIcon);
+
+        const forecastDayInfo = document.createElement("div");
+        forecastDayInfo.classList.add('forecast-day-info');
+        forecastCard.appendChild(forecastDayInfo);
+
+        const forecastTemp = document.createElement("span");
+        forecastTemp.classList.add('forecast-temp');
+        forecastTemp.classList.add('temp-circle-small');
+        forecastTemp.innerHTML = Math.round(e.main.temp);
+        forecastDayInfo.appendChild(forecastTemp);
+
+        const forecastCond = document.createElement('span');
+        forecastCond.classList.add('forecast-cond');
+        forecastCond.innerHTML = e.weather[0].main;
+        forecastDayInfo.appendChild(forecastCond);
+
+        const forecastDate = document.createElement('div');
+        forecastDate.classList.add('forecast-date');
+        forecastDate.innerHTML = e.dt_txt;
+        forecastDayInfo.appendChild(forecastDate);
+
+      })
+    })
 
     // Get background images
   pexelsApi().then( data => {
