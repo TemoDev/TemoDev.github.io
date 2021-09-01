@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <!-- Link Google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="main-info-container">
+
+            <div class="main-info-content">
+                <div class="currWeather-info">
+                    <div class="currTemp temp-circle-big">16</div>
+                    <div class="weatherCond">
+                        <img class="weatherCond-icon" src="./Icons/sun.svg" alt="Weather Icon">
+                        <p class="weatherDesc">Clear</p>
+                    </div>
+                </div>
+    
+                <div class="currPlace">London</div>
+                <div class="currDate">
+                    <div class="currDate-month">27 August</div>
+                    <div class="currDate-day">Monday</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="data-con">
+            <div class="logo">Wherether.</div>
+            <div class="constum-field">
+                <input type="text" id="searchBar" name="fname" placeholder="Enter Location">
+                <button class="mainBtn" type="button">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"/>
+                        </svg>
+                        
+                </button>
+            </div>
+
+            <div class="currWeather-title">Current Weather</div>
+
+            <div class="currentData-table">
+
+            <div class="row">
+                <div class="row-card">
+                    <div class="row-title">City</div>
+                    <div class="row-data row-data-city">London</div>
+                </div> <!-- row card -->
+                <div class="row-card">
+                    <div class="row-title">Sunrise</div>
+                    <div class="row-data row-title-sunRise">10:00</div>
+                </div> <!-- row card -->
+                <div class="row-card">
+                    <div class="row-title">Sunset</div>
+                    <div class="row-data row-title-sunSet">19:42</div>
+                </div> <!-- row card -->
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="row-card">
+                    <div class="row-title">Temperature</div>
+                    <div class="row-data temp-circle-small row-data-temp">16</div>
+                </div> <!-- row card -->
+                <div class="row-card">
+                    <div class="row-title">Temp-max</div>
+                    <div class="row-data temp-circle-small row-temp-max">18</div>
+                </div> <!-- row card -->
+                <div class="row-card">
+                    <div class="row-title">Temp-min</div>
+                    <div class="row-data temp-circle-small row-temp-min">14</div>
+                </div> <!-- row card -->
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="row-card">
+                    <div class="row-title">Feels Like</div>
+                    <div class="row-data temp-circle-small row-temp-feels">18</div>
+                </div> <!-- row card -->
+                <div class="row-card">
+                    <div class="row-title">Humidity</div>
+                    <div class="row-data row-humidity">44%</div>
+                </div> <!-- row card -->
+                <div class="row-card">
+                    <div class="row-title">Pressure</div>
+                    <div class="row-data row-pressure">1015mbar</div>
+                </div> <!-- row card -->
+            </div> <!-- row -->
+
+            </div><!--currentData-table-->
+        </div>
+    </div>
+
+    <img class="bg">
+
+    <!-- scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>

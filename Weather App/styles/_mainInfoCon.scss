@@ -1,0 +1,53 @@
+.main-info-container{
+    position: relative;
+    height: 100vh;
+}
+
+.main-info-content{
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.currWeather-info{
+    display: flex;
+}
+
+.currTemp{
+    --temp-size: 200px;
+    font-size: var(--temp-size);
+    font-weight: bold;
+}
+
+.weatherCond{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.weatherCond-icon{
+    height: 150px;
+    width: 150px;
+}
+
+.weatherDesc{
+    text-align: center;
+}
+
+.currPlace{
+   font-size: 96px; 
+   font-weight: 600;
+}
+
+.currDate{
+    display: flex;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.currDate-month{
+    margin-right: 25px;
+}

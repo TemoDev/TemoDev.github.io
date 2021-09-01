@@ -1,0 +1,104 @@
+.data-con{
+    height: 100vh;
+    width: 40vw;
+    background-color: rgba(33, 33, 33, .8);
+    padding: 50px 40px;
+}
+
+.logo{
+   font-size: 48px; 
+   font-weight: 600;
+   margin-bottom: 35px;
+}
+
+// styling search bar
+
+.constum-field{
+    position: relative;
+    width: 75%;
+    margin-bottom: 75px;
+}
+
+#searchBar{
+   
+    border-radius: 40px;
+    padding: 12px var(--input-padding-sides);
+    background-color: #fff;
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+}
+
+#searchBar::placeholder{
+    color: #8F8F8F;
+    opacity: .7;
+    font-size: 14px;
+}
+
+.mainBtn{
+    position: absolute;
+    right: var(--input-padding-sides);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+
+    svg{
+        width: 24px;
+        height: 24px;
+        fill: black;
+
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        transform: translate(-50%,-50%); 
+        background-color: black;
+        border-radius: 50%;
+        transition: all .2s ease-in-out;
+    }
+
+    &:hover{
+        &:before{
+            height: 40px;
+            width: 40px;
+        }  
+        svg {
+            fill: white;
+        }
+    }
+}
+
+.currWeather-title{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.row-title{
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+.row-data{
+    font-size: 24px;
+}
