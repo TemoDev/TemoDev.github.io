@@ -104,8 +104,7 @@ h6 {
 }
 
 .currTemp {
-  --temp-size: 200px;
-  font-size: var(--temp-size);
+  font-size: 200px;
   font-weight: bold;
 }
 
@@ -149,84 +148,13 @@ h6 {
   margin-right: 25px;
 }
 
-.forecast-title {
-  font-size: 24px;
-  font-weight: 500;
-  margin: 55px 0 40px;
-}
-
-.forecast-row {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.forecast-card {
-  background-color: #2B2B2B;
-  width: 215px;
-  border-radius: 20px;
-  padding: 15px;
-}
-
-.forecast-card-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 6px;
-}
-
-.forecast-day {
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.forecast-icon {
-  width: 32px;
-  height: 32px;
-}
-
-.forecast-day-info {
-  text-align: center;
-}
-
-.forecast-temp {
-  font-size: 36px;
-  font-weight: 500;
-  margin: auto;
-}
-
-.forecast-cond {
-  font-size: 13px;
-  margin-left: 6px;
-  margin-bottom: 12px;
-}
-
-.forecast-date {
-  text-align: center;
-  font-size: 13px;
-  margin-bottom: 6px;
-  font-weight: 300;
-}
-
-.forecast-time {
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-}
-
 .data-con {
   height: 100vh;
   overflow-y: auto;
   width: 40vw;
   background-color: rgba(33, 33, 33, 0.8);
-  padding: 50px 40px;
+  padding: 50px 30px 50px 30px;
+  margin-left: auto;
 }
 
 .logo {
@@ -339,7 +267,8 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 55px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .row-title {
@@ -348,7 +277,69 @@ h6 {
   opacity: .6;
 }
 
+.row-card {
+  margin-right: 10px;
+}
+
 .row-data {
   font-size: 24px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 975px) {
+  .currTemp {
+    font-size: 120px;
+  }
+  .temp-circle-big:after {
+    right: -40px;
+    top: 25px;
+  }
+  .weatherCond-icon {
+    height: 80px;
+    width: 80px;
+  }
+  .currPlace {
+    font-size: 48px;
+  }
+  .currDate {
+    font-size: 14px;
+  }
+  .data-con {
+    width: 55vw;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .constum-field {
+    width: 90%;
+  }
+  .currWeather-title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .main-info-container {
+    height: 10vh;
+  }
+  .data-con {
+    width: 100vw;
+    height: 60vh;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .constum-field {
+    width: 90%;
+  }
+  .currWeather-title {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
