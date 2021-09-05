@@ -107,7 +107,7 @@ const weatherApi = async () => {
 const pexelsApi  = async () => {
   // get background images
   const pexelsApi = await fetch(`https://api.pexels.com/v1/search?query=${cityName}&per_page=1`, {
-    method: "GET",
+    method: "GET",  
     headers: {
       Accept: "application/json",
       Authorization: pexelsKey
@@ -177,6 +177,7 @@ btnMain.addEventListener('click', () =>{
       rowPressure.innerText = data.main.pressure + "mbar";
     }).catch((error) => {
       alert('Please enter city name correctly.');
+      bg.src = '';
     });
 
     // Get background images
@@ -184,7 +185,6 @@ btnMain.addEventListener('click', () =>{
 
       // console.log(data);
       const newImage = data.photos[0].src.landscape;
-      document.body.style.backgroundColor = data.avg_color;
       bg.src = newImage;
 
   })

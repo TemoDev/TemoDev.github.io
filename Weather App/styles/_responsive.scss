@@ -41,12 +41,8 @@
     .container{
         flex-direction: row-reverse;
     }
-
     .main-info-container{
         height: 10vh;
-    }
-    .main-info-content{
-        // position: relative;
     }
     // Detailed data 
     .data-con{
@@ -61,5 +57,18 @@
     }
     .currWeather-title{
         font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .main-info-content{
+        padding: 25px;
+    }
+    .row-data{
+        font-size: 14px;
+    }
+    .row-title{
+        font-size: 12px;
     }
 }
