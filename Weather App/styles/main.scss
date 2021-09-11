@@ -5,7 +5,6 @@ body {
     background-color: #000000;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 }
 
 * {
@@ -84,4 +83,3 @@ h6 {
 
 @import './mainInfoCon';
 @import './dataCon';
-@import './responsive';

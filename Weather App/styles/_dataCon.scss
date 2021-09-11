@@ -3,8 +3,7 @@
     overflow-y: auto;
     width: 40vw;
     background-color: rgba(33, 33, 33, .8);
-    padding: 50px 30px 50px 30px;
-    margin-left: auto;
+    padding: 50px 40px;
 }
 
 .logo{
@@ -22,6 +21,7 @@
 }
 
 #searchBar{
+   
     border-radius: 40px;
     padding: 12px var(--input-padding-sides);
     background-color: #fff;
@@ -91,7 +91,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 55px;
 }
 
 .row-title{
@@ -100,11 +100,6 @@
     opacity: .6;
 }
 
-.row-card{
-    margin-right: 10px;
-}
-
 .row-data{
     font-size: 24px;
-    margin-bottom: 40px;
 }
