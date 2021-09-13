@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"  />
+
     <!-- custom styles -->
     <link rel="stylesheet" href="./styles/main.css">
 
@@ -18,23 +21,25 @@
 
     <div class="container">
 
+        <div class="main-info-container">
 
-        <div class="main-info-content">
+            <div class="main-info-content">
                 <div class="currWeather-info">
-                    <div class="currTemp temp-circle-big">0</div>
+                    <div class="currTemp temp-circle-big">16</div>
                     <div class="weatherCond">
                         <img class="weatherCond-icon" src="./Icons/sun.svg" alt="Weather Icon">
-                        <p class="weatherDesc">N/A</p>
+                        <p class="weatherDesc">Clear</p>
                     </div>
                 </div>
     
-                <div class="currPlace">N/A</div>
+                <div class="currPlace">London</div>
                 <div class="currDate">
-                    <div class="currDate-month">N/A</div>
-                    <div class="currDate-day">N/A</div>
+                    <div class="currDate-month">27 August</div>
+                    <div class="currDate-day">Monday</div>
                 </div>
-        </div>
+            </div>
 
+        </div>
 
         <div class="data-con">
             <div class="logo">Wherether.</div>
@@ -55,56 +60,68 @@
                 <div class="row">
                 <div class="row-card">
                     <div class="row-title">City</div>
-                    <div class="row-data row-data-city">N/A</div>
+                    <div class="row-data row-data-city">London</div>
                 </div> <!-- row card -->
                 <div class="row-card">
                     <div class="row-title">Sunrise</div>
-                    <div class="row-data row-title-sunRise">N/A</div>
+                    <div class="row-data row-title-sunRise">10:00</div>
                 </div> <!-- row card -->
                 <div class="row-card">
                     <div class="row-title">Sunset</div>
-                    <div class="row-data row-title-sunSet">N/A</div>
+                    <div class="row-data row-title-sunSet">19:42</div>
                 </div> <!-- row card -->
                 </div> <!-- row -->
 
                 <div class="row">
                 <div class="row-card">
                     <div class="row-title">Temperature</div>
-                    <div class="row-data temp-circle-small row-data-temp">N/A</div>
+                    <div class="row-data temp-circle-small row-data-temp">16</div>
                 </div> <!-- row card -->
                 <div class="row-card">
                     <div class="row-title">Temp-max</div>
-                    <div class="row-data temp-circle-small row-temp-max">N/A</div>
+                    <div class="row-data temp-circle-small row-temp-max">18</div>
                 </div> <!-- row card -->
                 <div class="row-card">
                     <div class="row-title">Temp-min</div>
-                    <div class="row-data temp-circle-small row-temp-min">N/A</div>
+                    <div class="row-data temp-circle-small row-temp-min">14</div>
                 </div> <!-- row card -->
                 </div> <!-- row -->
 
                 <div class="row">
                 <div class="row-card">
                     <div class="row-title">Feels Like</div>
-                    <div class="row-data temp-circle-small row-temp-feels">N/A</div>
+                    <div class="row-data temp-circle-small row-temp-feels">18</div>
                 </div> <!-- row card -->
                 <div class="row-card">
                     <div class="row-title">Humidity</div>
-                    <div class="row-data row-humidity">N/A</div>
+                    <div class="row-data row-humidity">44%</div>
                 </div> <!-- row card -->
                 <div class="row-card">
                     <div class="row-title">Pressure</div>
-                    <div class="row-data row-pressure">N/A</div>
+                    <div class="row-data row-pressure">1015mbar</div>
                 </div> <!-- row card -->
                 </div> <!-- row -->
 
             </div><!--currentData-table-->
+
+            <div class="forecast-title">4 Day / 3 Hour Forecast</div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                </div>
+            </div>
             
         </div>
     </div>
 
-    <img class="bg" src="./imgs/earth.jpg">
+    <img class="bg">
 
     <!-- scripts -->
+
+    <!-- Swiper JS for forecast row -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

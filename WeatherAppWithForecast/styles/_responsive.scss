@@ -1,0 +1,74 @@
+@media screen and (max-width: 975px){
+    // Main info 
+    .currTemp {
+        font-size: 120px;
+    }
+    .temp-circle-big{
+        &:after{
+            right: -40px;
+            top: 25px;
+        }
+    }
+    .weatherCond-icon{
+        height: 80px;
+        width: 80px;
+    }
+    .currPlace{
+        font-size: 48px;
+    }
+    .currDate{
+        font-size: 14px;
+    }
+
+    // Detailed data 
+
+    .data-con{
+        width: 55vw; 
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .constum-field{
+        width: 90%;
+    }
+    .currWeather-title{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .container{
+        flex-direction: column-reverse;
+    }
+    .main-info-container{
+        height: 10vh;
+    }
+    // Detailed data 
+    .data-con{
+        width: 100vw;
+        height: 60vh; 
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .constum-field{
+        width: 90%;
+    }
+    .currWeather-title{
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .main-info-content{
+        padding: 25px;
+    }
+    .row-data{
+        font-size: 14px;
+    }
+    .row-title{
+        font-size: 12px;
+    }
+}
