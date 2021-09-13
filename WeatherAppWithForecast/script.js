@@ -201,18 +201,21 @@ btnMain.addEventListener('click', () =>{
 
   weatherForcastApi()
     .then(data => {      
+
+      console.log(data.list);
+
       myArr1.push(data.list.slice(4, 12));
       myArr2.push(data.list.slice(12, 20));
       myArr3.push(data.list.slice(20, 28));
       myArr4.push(data.list.slice(28, 36));
-      console.log(myArr1);
+      // console.log(myArr1);
 
       
 
       myArr1[0].forEach( e => {
         const forecastUnix = e.dt;
         const forecastTime = new Date(forecastUnix * 1000);
-        console.log(e)
+        // console.log(e)
 
 
         const forecastCard = document.createElement('div');
