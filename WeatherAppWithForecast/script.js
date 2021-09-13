@@ -106,7 +106,7 @@ const pexelsKey = `563492ad6f91700001000001fe3db27c7c6845d3a85eec010fa8f6c4`;
 const weatherApi = async () => {
 
   // get weather
-  const getWeatherApi = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`);
+  const getWeatherApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`);
   const weatherData = await getWeatherApi.json();
 
   // return promise -> weather data
