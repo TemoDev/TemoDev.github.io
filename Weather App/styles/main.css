@@ -351,5 +351,12 @@ h6 {
   .row-title {
     font-size: 12px;
   }
+  .temp-circle-small:after {
+    width: 4px;
+    height: 4px;
+    border: 1px solid #fff;
+    right: -8px;
+    top: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
