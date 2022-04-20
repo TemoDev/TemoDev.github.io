@@ -1,0 +1,57 @@
+// colors
+$bgColor: #111a20;
+$text-white: #fff;
+
+html {
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: $bgColor;
+  color: $text-white;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+@media screen and (min-width: 576px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro-row {
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@import "./nav";
+@import "./intro";
+@import "./section";
+@import "./video-section";

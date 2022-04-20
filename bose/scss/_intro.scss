@@ -1,0 +1,111 @@
+.intro {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.intro-img {
+  position: relative;
+
+  &::after {
+    content: url("../assets/headphone-shadow.svg");
+    display: block;
+  }
+}
+
+.intro-content {
+  align-self: center;
+  max-width: 100%;
+}
+
+.intro-img img {
+  max-width: 18rem;
+  width: 100%;
+}
+
+.intro-title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.intro-btns {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.intro-btn {
+  font-size: 1rem;
+  color: $bgColor;
+  background-color: $text-white;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  border: 1px solid $bgColor;
+
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    background: $bgColor;
+    color: $text-white;
+    border: 1px solid $text-white;
+  }
+}
+
+// lines parent
+.intro-animation-lines {
+  width: 70rem;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  transform: translateX(50%);
+}
+
+// single line
+.intro-animation-line {
+  // transform: scale(2);
+  animation: introAnimationLines 6s infinite ease-in-out;
+
+  @for $i from 1 through 25 {
+    &:nth-child(#{$i}) {
+      animation-delay: 200ms * $i;
+    }
+  }
+}
+
+@keyframes introAnimationLines {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-1rem) scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro-content {
+    max-width: 50%;
+  }
+  .intro-img {
+    margin-left: 1rem;
+  }
+  .intro-img img {
+    max-width: 45rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+.video-section {
+  height: 110vh;
+  background-color: #fff;
+  text-align: center;
+}
+
+.headphone-video {
+  max-width: 50rem;
+  width: 100%;
+}
+
+.video-section-content {
+  color: $bgColor;
+  text-align: center;
+  padding: 8rem 0 2rem;
+}
+
+.video-section--title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.video-section--text {
+  max-width: 34rem;
+  width: 100%;
+  margin: auto;
+}
