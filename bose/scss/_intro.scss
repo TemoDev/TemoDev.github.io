@@ -75,7 +75,6 @@
 
 // single line
 .intro-animation-line {
-  // transform: scale(2);
   animation: introAnimationLines 6s infinite ease-in-out;
 
   @for $i from 1 through 25 {

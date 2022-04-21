@@ -12,7 +12,7 @@ let accelamount = 0.1;
 let scrollpos = 0;
 let delay = 0;
 
-gsap.to(videoSection, {
+gsap.from(videoSection, {
   scrollTrigger: {
     trigger: ".video-section",
     pin: true,
@@ -23,7 +23,6 @@ gsap.to(videoSection, {
       delay += (scrollPos - delay) * accelamount;
       vid.currentTime = delay;
     },
-    // markers: true,
     toggleActions: "play none none reverse",
     scrub: true,
   },
@@ -32,8 +31,7 @@ gsap.to(videoSection, {
 gsap.from(videoSectionContent, {
   opacity: 0,
   scrollTrigger: {
-    trigger: ".video-section",
-    // markers: true,
+    trigger: ".video-section-content-container ",
     start: "top center",
     end: "bottom center",
     toggleActions: "play none none reverse",
@@ -42,10 +40,10 @@ gsap.from(videoSectionContent, {
 
 gsap.from(vid, {
   opacity: 0,
+  delay: 0.5,
   scrollTrigger: {
     trigger: ".video-section",
-    markers: true,
-    start: "top 30%",
+    start: "top center",
     end: "center center",
     toggleActions: "play none none reverse",
   },

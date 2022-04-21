@@ -1,0 +1,30 @@
+.features {
+  padding: 4rem 0;
+}
+
+.feature-row {
+  margin-bottom: 6rem;
+}
+
+.feature-img {
+  max-width: 30rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
+
+  & img {
+    border-radius: 0.5rem;
+  }
+}
+
+.feature-content {
+  max-width: 30rem;
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+@media screen and( min-width: 576px) {
+  .feature-row {
+    align-items: center;
+  }
+}

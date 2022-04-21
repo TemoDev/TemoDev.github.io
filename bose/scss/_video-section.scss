@@ -1,7 +1,14 @@
 .video-section {
-  height: 110vh;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
   background-color: #fff;
   text-align: center;
+}
+
+.video-section-content-container {
+  padding: 4rem 0 0;
+  background-color: #fff;
 }
 
 .headphone-video {
@@ -12,7 +19,6 @@
 .video-section-content {
   color: $bgColor;
   text-align: center;
-  padding: 8rem 0 2rem;
 }
 
 .video-section--title {

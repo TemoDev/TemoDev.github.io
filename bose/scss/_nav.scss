@@ -1,6 +1,6 @@
 nav {
-  padding: 1.5rem 0;
-  background-color: rgbა(17, 26, 32, 0.3);
+  padding: 0.8rem 0;
+  background-color: rgba(17, 26, 32, 0.3);
   backdrop-filter: blur(1rem);
   width: 100%;
   position: fixed;
@@ -78,13 +78,13 @@ nav {
     background-color: white;
     width: 80%;
     height: 3px;
-    transform: rotate(45deg);
+    transform: translate(7px, 7px) rotate(45deg);
   }
   &::before {
     background-color: white;
     width: 80%;
     height: 3px;
-    transform: translate(-9px, -9px) rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 

@@ -13,6 +13,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: $bgColor;
   color: $text-white;
+  overflow-x: hidden;
 }
 
 *,
@@ -55,3 +56,5 @@ img {
 @import "./intro";
 @import "./section";
 @import "./video-section";
+@import "./noise-cancelling";
+@import "./features";

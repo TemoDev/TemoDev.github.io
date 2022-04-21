@@ -1,0 +1,51 @@
+.noise-cancelling-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.noise-cancelling-img {
+  max-width: 45rem;
+  width: 100%;
+}
+
+#noise-cancelling-title {
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+}
+
+.noise-cancellation-svg {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 20%);
+}
+
+.noise-cancellation-svg path {
+  animation: noiseCancellationAnimation 5s infinite ease-in-out;
+
+  @for $i from 1 through 25 {
+    &:nth-child(#{$i}) {
+      animation-delay: 200ms * $i;
+    }
+  }
+}
+
+@keyframes noiseCancellationAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-1rem) scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
