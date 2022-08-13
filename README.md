@@ -1,3 +1,3 @@
 # TemoDev.github.io
 
-Projects for live preview
+Live preview for my portfolio projects.
